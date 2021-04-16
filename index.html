@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀑布流练习</title>
+    <script src="../../jquery-3.4.1.js"></script>
+    <style>
+        .waterfallbox {
+            position: relative;
+            width: 60%;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .waterfall {
+            /* 必须有定位，不然top和left不起作用 */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            overflow: auto;
+        }
+
+        .content {
+            display: inline-block;
+            position: absolute;
+            width: 200px;
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        .content img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="waterfallbox">
+        <div class="waterfall">
+            <!-- <div class="content">
+                <img src="../imgs/1.jpg" alt="">
+                <p>这是图片1</p>
+                <a href="#">这是链接1</a>
+            </div>
+            <div class="content">
+                <img src="../imgs/2.jpg" alt="">
+                <p>这是图片2</p>
+                <a href="#">这是链接2</a>
+            </div>
+            <div class="content">
+                <img src="../imgs/3.jpg" alt="">
+                <p>这是图片3</p>
+                <a href="#">这是链接3</a>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="js/waterfall.js"></script>
+
+</body>
+
+</html>
