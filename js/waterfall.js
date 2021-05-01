@@ -65,7 +65,7 @@ function getData(callback) {
         url: 'http://hn216.api.yesapi.cn/?s=App.Table.MultiGet',
         dataType: 'jsonp',
         data: {
-            'app_key': '5C77AE541D32CD3BC2DA408567C5E9AE',
+            'app_key': '---',
             'model_name': 'waterfall',
             'ids': '1, 2, 3, 4, 5, 6, 7',
             'return_data': 1
